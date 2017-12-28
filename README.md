@@ -5,9 +5,10 @@ Config parser (used for bcoin).
 ## Usage
 
 ``` js
-const bcfg = require('bcfg');
+const Config = require('bcfg');
 
-const config = bcfg('my-module', {
+// Will consider ~/.my-module the prefix directory.
+const config = new Config('my-module', {
   alias: {
     'n': 'network'
   }
