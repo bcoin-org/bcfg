@@ -1,6 +1,6 @@
 {
   "name": "bcfg",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Config parser for bcoin",
   "keywords": [
     "conf",
