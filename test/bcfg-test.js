@@ -17,8 +17,13 @@ describe('bcfg', function() {
     assert.strictEqual(parent.str('test-string'), 'hello');
 
     const child = parent.filter('child');
-
     assert.strictEqual(child.str('test-string'), 'goodbye');
+
+    const child2 = parent.filter('child', {
+      options: false
+    });
+
+    assert.strictEqual(child2.str('test-string'), null);
   });
 
   it('should filter argv', () => {
@@ -34,8 +39,15 @@ describe('bcfg', function() {
 
     assert.strictEqual(parent.str('test-string'), 'hello');
 
-    const child = parent.filter('child');
-
+    const child = parent.filter('child', {
+      // must not have any effect.
+      options: false
+    });
     assert.strictEqual(child.str('test-string'), 'goodbye');
+
+    const child2 = parent.filter('child', {
+      args: false
+    });
+    assert.strictEqual(child2.str('test-string'), null);
   });
 });
