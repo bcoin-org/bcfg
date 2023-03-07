@@ -103,7 +103,7 @@
     }],
     "new-parens": "error",
     "no-buffer-constructor": "error",
-    "no-console": "off",
+    "no-console": 1,
     "no-extra-semi": "off",
     "no-fallthrough": "off",
     "no-func-assign": "off",
