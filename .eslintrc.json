@@ -39,7 +39,8 @@
       },
       "rules": {
         "max-len": "off",
-        "prefer-arrow-callback": "off"
+        "prefer-arrow-callback": "off",
+        "no-return-assign": "off"
       }
     }
   ],
@@ -103,7 +104,7 @@
     }],
     "new-parens": "error",
     "no-buffer-constructor": "error",
-    "no-console": 1,
+    "no-console": "off",
     "no-extra-semi": "off",
     "no-fallthrough": "off",
     "no-func-assign": "off",
