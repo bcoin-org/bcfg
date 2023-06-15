@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('bsert');
-const Config = require('../lib/config');
+const {Config} = require('../lib/config');
 
 describe('bcfg', function() {
   it('should filter options', () => {
